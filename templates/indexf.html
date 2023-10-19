@@ -1,0 +1,42 @@
+<html>  
+<head>  
+    <title>Message</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+</head>  
+   
+<body>  
+    <h1>SOLAR PANEL FAULTY PREDICTION</h1>  
+</body>  
+</html>  
+
+<html>  
+   <body>   
+      <form action = "http://localhost:5000/predict" method = "POST">  
+         <p>Ipv <input type = "text" name = "Ipv" /></p>  
+         <p>Vpv <input type = "text" name = "Vpv" /></p>  
+         <p>Vdc <input type = "text" name = "Vdc" /></p>  
+         <p>ia <input type = "text" name = "ia" /></p>  
+         <p>ib <input type = "text" name = "ib" /></p>  
+         <p>ic <input type = "text" name = "ic" /></p>  
+         <p>va <input type = "text" name = "va" /></p>  
+         <p>vb <input type = "text" name = "vb" /></p>  
+         <p>vc <input type = "text" name = "vc" /></p>  
+         <p>Iabc <input type = "text" name = "Iabc" /></p> 
+         <p>If <input type = "text" name = "If" /></p> 
+         <p>Vabc <input type = "text" name = "Vabc" /></p>  
+         <p>Vf <input type = "text" name = "Vf" /></p>  
+         
+         <p><button type = "submit" class "btn btn-primary btn-block btn-large">predict</button /></p>  
+      </form>
+   <br>
+   <br>
+   {{ y }}
+
+</div>
+
+  
+</body>  
+</html>  
+
+
+
